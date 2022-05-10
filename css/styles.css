@@ -1039,7 +1039,7 @@ address {
     position: absolute;
     /* -webkit-appearance: none;
     -moz-appearance: none; */
-    /* appearance: none; */
+    appearance: none;
 
     top: 3px;
     left: 12px;
