@@ -706,8 +706,12 @@ address {
 /* FOOTER */
 
 .footer {
+    max-width: 1600px;
+    height: 252px;
     padding-top: 60px;
     padding-bottom: 60px;
+    margin-right: auto;
+    margin-left: auto;
 
     background-color: var(--footer-bg-color);
 }
@@ -793,16 +797,23 @@ address {
     padding: 15px 16px;
     margin-right: 12px;
 
+    color: var(--white-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    background-color: inherit;
+    background-color: var(--footer-bg-color);
+
+    transition: border-color var(--transition);
 }
 
-subscribe-input::placeholder {
+.subscribe-input::placeholder {
     font-size: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-input:hover {
+    border-color: var(--accent-color);
 }
 
 .subscribe-footer.hero-btn {
@@ -971,7 +982,9 @@ subscribe-input::placeholder {
     left: 0;
     width: 100%;
     height: 40px;
+    padding-top: 12px;
     padding-right: 16px;
+    padding-bottom: 12px;
     padding-left: 42px;
     
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1033,6 +1046,10 @@ subscribe-input::placeholder {
 .modal-form-label-policy {
     line-height: 1.71;
     color: var(--sonic-silver-color);
+}
+
+.modal-form-link {
+    line-height: 1.71;
 }
 
 .hero-btn.submit {
