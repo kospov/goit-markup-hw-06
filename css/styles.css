@@ -886,8 +886,6 @@ address {
     align-items: center;
     width: 30px;
     height: 30px;
-    /* margin-top: 8px;
-    margin-right: 8px; */
     margin-left: auto;
 
     border-radius: 15px;
@@ -1034,16 +1032,10 @@ address {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form-input-policy {
-    /* CLEAR AREA FOR CUSTOM CHECKBOX */
+.custom-checkbox {
     position: absolute;
-    /* -webkit-appearance: none;
-    -moz-appearance: none; */
-    appearance: none;
-
     top: 3px;
     left: 12px;
-    z-index: 10;
     
     width: 16px;
     height: 16px;
@@ -1053,23 +1045,24 @@ address {
     background-color: var(--white-color);
 }
 
-.modal-form-input-policy:hover,
-.modal-form-input-policy:focus {
+.modal-form-input-policy:hover + .custom-checkbox,
+.modal-form-input-policy:focus + .custom-checkbox {
     border-color: var(--accent-color);
 }
 
-
 /* CUSTOM CHECKBOX */
+
 .checkbox-icon {
     position: absolute;
-    top: 5px;
-    left: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-    width: 12px;
-    height: 12px;
+    width: 11px;
+    height: 8px;;
 }
 
-.modal-form-label-policy:checked + .checkbox-icon {
+.modal-form-input-policy:checked + .custom-checkbox {
     background-color: var(--accent-color);
 }
 
