@@ -976,6 +976,13 @@ subscribe-input::placeholder {
     
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
+    transition: border-color var(--transition);
+}
+
+.modal-form-input:hover,
+.modal-form-input:focus {
+    border-color: var(--accent-color);
 }
 
 .modal-form-icon {
@@ -985,6 +992,13 @@ subscribe-input::placeholder {
 
     width: 18px;
     height: 18px;
+
+    transition: fill var(--transition);
+}
+
+.modal-form-input:hover + .modal-form-icon,
+.modal-form-input:focus + .modal-form-icon {
+    fill: var(--accent-color);
 }
 
 .modal-form-comments {
